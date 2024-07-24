@@ -20,7 +20,7 @@ XTerm*color15: #ffffff
 xterm*visualBell: true
 xterm*bellIsUrgent: false
 
-XTerm*font: xft:FiraCode Nerd Font:size=10
+XTerm*font: xft:Hack Nerd Font:size=10
 Xterm*lineSpace:0
 Xterm*letterSpace: 0
 Xft.dpi: 96

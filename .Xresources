@@ -1,0 +1,29 @@
+XTerm*background: #000000
+XTerm*foreground: #87ff87
+XTerm*color0 : #303030
+XTerm*color1 : #ffa700
+XTerm*color2 : #005f00
+XTerm*color3 : #ffd7af
+XTerm*color4 : #00008b
+XTerm*color5 : #ffafaf
+XTerm*color6 : #00afaf
+XTerm*color7 : #bcbcbc
+XTerm*color8 : #444444
+XTerm*color9 : #ff0000
+XTerm*color10: #00875f
+XTerm*color11: #ffff00
+XTerm*color12: #0000ff
+XTerm*color13: #ff00ff
+XTerm*color14: #00ffff
+XTerm*color15: #ffffff
+
+xterm*visualBell: true
+xterm*bellIsUrgent: false
+
+XTerm*font: xft:FiraCode Nerd Font:size=10
+Xterm*lineSpace:0
+Xterm*letterSpace: 0
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight

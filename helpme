@@ -1,0 +1,89 @@
+!! i have installed firefox and qbittorrent, if you belive this to be bloat please remove it !!
+-------------------------------------------------
+general utilities and gnu core utilities
+-------------------------------------------------
+sudo pacman -S (package name) to install stuff
+you can also use yay -S (DO NOT SUDO!!!)
+sudo pacman -R (package name) to uninstall stuff (rns for its unused dependencies)
+
+cd (directory name) to change directories
+ls to view contents of the current directories ls -a to show hidden files (you are using lsd or ls developed but there arent really any differences)
+mkdir (name) to create directories
+rm (filename) to delete a file
+rm -rf (directory name) to delete a file
+touch(filename) can be used to create a file, i reccomend just using nvim
+
+cat(filename) to print the contents of a file (lolcat if u want it to look cool)
+nvim opens your brand new semi-custom neovim config complete with tabs and a file tree and all sorts, nvim(filename) to open a file or create one with that name
+yazi is your blazing fast file manager, written in rust.arrow keys to move, enter to open. d to delete y and p to copy/paste, space to select
+htop shows system resouce usage,might have to include my settings
+pfetch is your fetch script (neofetch looked weird when i tried to make it fit with my colourscheme so i went sudo pacman -R on it)
+pipes.sh just plays a cool luh thing
+just type firefox to get into your browser, use a mint green theme and a force dark mode addon to fit the theme dont forget ublock origin
+git clone and wget are useful for getting stuff from the internet
+qbittorrent is for your torrents, pretty self explainitory. piratebay.org is a good place to start, dont download software or porn, you will be infected
+
+just type a programs name to open it and if it was installed with yay or pacman it will open, you can see what will do this in your bin folder
+help/man (program name) or (program name) -help should do something if your stuck
+
+python3 (filename) will run a python file
+gcc (filename) will compile a c file, g++ for c++. you can run the output or any executeable with ./(filename) gcc defaults to a.out (./a.out)
+please always use file extensions for code files as nvim has language support (abc.py abc.cpp abc.c, etc)
+-------------------------------------------------
+i3 binds.config file at ~/.config/i3/config
+-------------------------------------------------
+windows (or alt if ur weird i will refer to this key as mod from now on) + enter creates a new terminal window
+mod + t creates a new termgpt window
+mod + r enters and exits resize mode, arrows to resize
+mod + number to move to that workspace
+mod + shift + number moves current window to that workspace
+mod + arrows to change active window
+mod + shift + arrows to move active window
+mod + shift + q to close active window
+-------------------------------------------------
+neovim lazyvim and some random shit i did to the terminal
+-------------------------------------------------
+if you hit escape on the terminal you get vim keybinds (letters to move V to highlight Y to yank P to paste I for insert etc)
+
+NORMAL NVIM
+after escape:
+i to insert
+:q to quit
+:w (filename optional (sometimes)) to save
+:wq to save quit
+v to enter visual or capital for visual line (highlight)
+y to yank (copy)
+p to paste
+:! to do a shell comand (useful for interpreted languages)
+
+!! IMPORTANT TO LEARN !!
+will be reffered to as move letters because i dont know what to call them
+h-left j-down k-up l-right
+
+LAZYVIM EXCLUSIVE
+if you enter the first letter of a command suggestions will pop up
+after escape:
+control + move letters to go to different window
+shift + move letters for different tab
+space + e open file viewer (movement keys and enter to interact)
+space + bd to close tab
+space + bD to close window (like the file thing)
+space + f + n for new file
+-------------------------------------------------
+maintainance notes
+-------------------------------------------------
+update regularly (sudo pacman -Syu)
+clean regularly(sudo pacman -Sc, sudo pacman -Rns $(pacman -Qdtq))
+if your display manager shits itself (you only get a tty) just do: sudo systemctl enable (dm name).i reccomend ly, it has failed me the least.
+do not touch your grub config files if you value your data
+
+important config files are located at:
+Xterm(your terminal): ~/.Xresources
+i3 (your window manager): ~/.config/i3/config
+bashrc(your bash prompt and some other stuff like defaults alias's and PATH): ~/.bashrc
+neovim(cd to this as there are multiple files): ~/.config/nvim/
+grub(dont do it that mint green outline is not worth destroying your bootloader): /boot/grub/grub.cfg
+bin(where everything you can open in one command is): /bin/
+-------------------------------------------------
+have fun, dont give up.
+simplicity is the ultimate sophistication
